@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f6fa;
+  background-color: #bdcbf8;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,7 @@ body {
 h1 {
   text-align: center;
   margin: 1rem 0;
-  color: #2c3e50;
+  color: #4098f1;
 }
 
 .chat-box {
