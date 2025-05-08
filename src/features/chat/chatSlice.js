@@ -5,7 +5,7 @@ export const sendMessage = createAsyncThunk(
   "chat/sendMessage",
   async ({ userId, message }) => {
     const res = await axios.post(
-      "https://chat-api-bot-backend.onrender.com/api/chat",
+      "https://chat-api-bot-backend.onrender.com/chat",
       { userId, message }
     );
     return { sender: "ai", text: res.data.response };
@@ -16,7 +16,7 @@ export const fetchChatHistory = createAsyncThunk(
   "chat/fetchChatHistory",
   async (userId) => {
     const res = await axios.get(
-      `https://chat-api-bot-backend.onrender.com/api/history/${userId}`
+      `https://chat-api-bot-backend.onrender.com/history/${userId}`
     );
     return res.data;
   }

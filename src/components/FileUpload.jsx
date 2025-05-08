@@ -10,7 +10,7 @@ export default function FileUpload() {
 
     try {
       await axios.post(
-        "https://chat-api-bot-backend.onrender.com/api/upload",
+        "https://chat-api-bot-backend.onrender.com/upload",
         formData
       );
       alert("File uploaded successfully");
